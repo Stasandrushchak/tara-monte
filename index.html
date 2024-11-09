@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Емності, куби, єврокуби, бочки</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="body">
+    <header class="header-top">
+      <h1 class="header">Ласкаво просимо до Магазину Ємностей</h1>
+
+      <p class="intro">Ваш надійний магазин тари під воду, пальне.</p>
+    </header>
+
+    <!-- Категорії продукції -->
+    <section class="categories">
+      <h2 class="header goods-title">Наша продукція</h2>
+      <div class="category-container">
+        <div class="category">
+          <div class="category__title-container">
+            <img class="icon" src="./img/icons/barrel-icon.png" alt="Бочки" />
+            <h3 class="headerc category__title">Бочки</h3>
+            <br />
+          </div>
+          <a href="#products" class="btn">
+            Міцні та якісні бочки для будь-яких потреб.</a
+          >
+        </div>
+        <div class="category">
+          <div class="category__title-container">
+            <img
+              class="icon"
+              src="./img/icons/eurocube-icon.png"
+              alt="Єврокуби"
+            />
+            <h3 class="header category__title">Єврокуби</h3>
+            <br />
+          </div>
+          <a href="#products" class="btn">
+            Великі єврокуби для промислового використання.</a
+          >
+        </div>
+        <div class="category">
+          <div class="category__title-container">
+            <img class="icon" src="./img/icons/canister-icon.png" alt="Бочки" />
+            <h3 class="header category__title">Каністри</h3>
+            <br />
+          </div>
+          <a href="#products" class="btn">
+            Міцні каністри для зберігання та транспортування.</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Рекомендовані товари -->
+    <section class="featured-products" id="products">
+      <h2 class="header recomended-goods-title">Рекомендовані товари</h2>
+      <br /><br />
+      <div class="product-container">
+        <div class="product">
+          <img src="./img/barrel.png" alt="Бочка" />
+          <h3 class="header">Міцна бочка</h3>
+          <p>Об`єм: 50л - 250л</p>
+          <p>Матеріал: метал/пластик</p>
+          <p>₴2000</p>
+
+          <a href="#" class="btn">Додати до кошика</a>
+        </div>
+        <div class="product">
+          <img src="./img/euro-cube-metal.png" alt="Промисловий Єврокуб" />
+          <h3 class="header">Промисловий Єврокуб</h3>
+          <p>Об`єм: 600л - 1000л</p>
+          <p>Матеріал: метал/пластик</p>
+          <p>₴5500</p>
+          <a href="#" class="btn">Додати до кошика</a>
+        </div>
+        <div class="product">
+          <img src="./img/canister.png" alt="Каністра" />
+          <h3 class="header">Зручна каністра</h3>
+          <p>Об`єм: 10л - 30л</p>
+          <p>Матеріал: метал/пластик</p>
+          <p>₴300</p>
+          <a href="#" class="btn">Додати до кошика</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контактна інформація -->
+    <section class="contact">
+
+      <div class="info-container"></div>
+      <h2>Контакти</h2>
+      <p>Tik-Tok:</p>
+      <p>Телефон: +380 66 570 95 98</p>
+
+      <p>Графік роботи: щодня з 08:00 по 21:00</p>
+      <form>
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Надіслати</button>
+      </form>
+    </section>
+
+    <!-- Підвал -->
+    <footer class="footer">
+      <p>&copy; 2024 Усі права захищені.</p>
+    </footer>
+  </body>
+</html>

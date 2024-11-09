@@ -1,0 +1,115 @@
+* {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: rgb(34, 34, 5);
+}
+
+.body {
+  box-sizing: border-box;
+  background-image: url(./img/bg-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 145vh;
+  width: 100%;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.goods-title {
+  margin-top: 510px;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+.intro {
+  align-self: flex-end;
+}
+/* Вирівнювання секції категорій горизонтально */
+.category-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.category {
+  min-width: 250px; /* фіксована ширина, щоб зберегти однаковий розмір */
+  flex: 1;
+}
+
+.category__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.category__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.featured-products {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.recomended-goods-title {
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: 700;
+}
+/* Додавання ефекту масштабування при наведенні на категорії та товари */
+.category img,
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* анімація масштабування */
+}
+
+.category img {
+  width: 32px;
+  height: 32px;
+  padding-inline: 10px;
+}
+
+.category img:hover,
+.product img:hover {
+  transform: scale(1.1); /* масштабування при наведенні */
+}
+
+/* Вирівнювання товарів у рядок у секції рекомендованих товарів */
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.product {
+  min-height: 500px; /* фіксована ширина для збереження розміру картки */
+  flex: 1;
+}
+
+.info-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer {
+  text-align: center;
+}
