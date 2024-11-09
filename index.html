@@ -16,7 +16,7 @@
     <header class="header-top">
       <h1 class="header">Ласкаво просимо до Магазину Ємностей</h1>
 
-      <p class="intro">Ваш надійний магазин тари під воду, пальне.</p>
+      <p class="intro">Ваш надійний провідник</p>
     </header>
 
     <!-- Категорії продукції -->
@@ -96,23 +96,27 @@
     <!-- Контактна інформація -->
     <section class="contact">
 
-      <div class="info-container"></div>
+      <div class="info-container">
       <h2>Контакти</h2>
-      <p>Tik-Tok:</p>
+
       <p>Телефон: +380 66 570 95 98</p>
-
+      <p>Tik-Tok:</p>
       <p>Графік роботи: щодня з 08:00 по 21:00</p>
-      <form>
-        <label for="name">Ім'я:</label>
-        <input type="text" id="name" name="name" required />
 
-        <label for="email">Електронна пошта:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Повідомлення:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit" class="btn">Надіслати</button>
+    </div>
+    
+      <form class="form">
+        <p class="form-recomendation">Якщо у Вас виникли запитання</br> можете відправити нам повідомлення,</br> і ми обов`язково з Вами зв`яжемось</p>
+        <div class="name form-field">
+        <input class="form-input" type="text" id="name" name="name" placeholder="Вкажіть своє ім`я" required />
+      </div>
+        <div class="email form-field">
+        <input class="form-input" type="phone" id="phone" name="phone" placeholder="Вкажіть номер телефону" required />
+      </div>
+      <div class="message form-field">
+        <textarea class="form-text" id="message" name="message" placeholder="Напишіть повідомлення" required></textarea>
+      </div>
+        <button type="submit" class="submit-btn">Надіслати</button>
       </form>
     </section>
 

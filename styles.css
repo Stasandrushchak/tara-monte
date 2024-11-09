@@ -4,12 +4,14 @@
 }
 
 .body {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
   background-image: url(./img/bg-main.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 145vh;
-  width: 100%;
+  height: 100vh;
+  /* width: 100%; */
 }
 
 .header-top {
@@ -19,14 +21,17 @@
 }
 
 .goods-title {
-  margin-top: 510px;
+  margin-top: 70px;
   font-size: 48px;
   font-weight: 700;
   color: black;
 }
 
 .intro {
+  margin-top: 480px;
   align-self: flex-end;
+  font-size: 18px;
+  margin-right: 20px;
 }
 /* Вирівнювання секції категорій горизонтально */
 .category-container {
@@ -60,7 +65,6 @@
 .featured-products {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -76,7 +80,7 @@
 /* Додавання ефекту масштабування при наведенні на категорії та товари */
 .category img,
 .product img {
-  max-width: 100%;
+  /* max-width: 100%; */
   border-radius: 8px;
   transition: transform 0.3s ease; /* анімація масштабування */
 }
@@ -110,6 +114,59 @@
   align-items: baseline;
 }
 
+.contact {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #bbc0c6;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-recomendation {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.form-field {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.form-input {
+  height: 40px;
+  width: 410px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.form-text {
+  height: 120px;
+  width: 400px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px; 0 0 5px
+}
+
+.submit-btn {
+  height: 40px;
+  width: 424px;
+  border-radius: 10px;
+  margin-left: 13px;
+}
+
 .footer {
   text-align: center;
+  background-color: #bbc0c6;
 }
